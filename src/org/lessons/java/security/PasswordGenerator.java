@@ -8,26 +8,26 @@ public class PasswordGenerator {
 
 
         System.out.println("Inserisci il nome e premi invio");
-        String userName = input.nextLine();
+        String userInputName = input.nextLine();
 
         System.out.println("Inserisci il cognome e premi invio");
-        String userSurname = input.nextLine();
+        String userInputSurname = input.nextLine();
 
         System.out.println("Inserisci il colore preferito e premi invio");
         String favouriteColor = input.nextLine();
 
         System.out.println("Inserisci il giorno di nascita e premi invio");
-        int dayOfBirth = Integer.parseInt(input.nextLine());
+        int inputDayOfBirth = Integer.parseInt(input.nextLine());
 
         System.out.println("Inserisci il mese di nascita e premi invio");
-        int monthOfBirth = Integer.parseInt(input.nextLine());
+        int inputMonthOfBirth = Integer.parseInt(input.nextLine());
         
         System.out.println("Inserisci l'anno di nascita e premi invio");
-        int yearOfBirth = Integer.parseInt(input.nextLine());
+        int inputYearOfBirth = Integer.parseInt(input.nextLine());
 
-        int sumBirthday = dayOfBirth + monthOfBirth + yearOfBirth;
-        String userPassword = userName + "-" + userSurname + "-" + favouriteColor + "-" + sumBirthday;
-        System.out.println("La password è: " + userPassword);
+        int sumUserDate = inputDayOfBirth + inputMonthOfBirth + inputYearOfBirth;
+        String userPasswordGenerated = userInputName + "-" + userInputSurname + "-" + favouriteColor + "-" + sumUserDate;
+        System.out.println("La password è: " + userPasswordGenerated);
 
 
 
